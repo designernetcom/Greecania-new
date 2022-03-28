@@ -7192,19 +7192,19 @@ i:before {
   font-weight: 500 !important;
 }
 
-.l_news_image {
+.l_news_image .l_news_img img{
   box-shadow: 0 0 6px #bcbcbc;
   transition: 0.3s linear;
 }
 
-.l_news_image:hover {
+.l_news_image .l_news_img img:hover {
   transform: scale(1.0808);
   box-shadow: 0 18px 55px 0 rgba(0, 0, 0, 0.36);
   transition-delay: 0.3s;
 }
 
 .latest-news {
-  background-color: rgb(15, 195, 226);
+  background-color: #ecfffe;
   padding: 2px 0;
 }
 .latest-news h4 {
@@ -7259,4 +7259,13 @@ i:before {
 
 .table td, .table th{
   padding: 7px 15px;
+}
+
+.modal-content{
+  background-color: #000;
+}
+
+.close{
+  opacity: 1.5;
+  color: #fff;
 }

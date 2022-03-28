@@ -27,6 +27,48 @@
 
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+
+      .modal-body{
+        padding: 30px;
+      }
+
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 7px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        box-shadow: inset 0 0 10px #000000b8;
+      }
+      
+      input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .btn-submit{
+        background: linear-gradient(90deg, rgb(15, 195, 226), rgb(15, 195, 226));
+        color: #fff;
+        font-weight: 800;
+        padding: 5px 20px;
+        border: 1px solid #01090a;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+            
+      </style>
+
   </head>
   <body>
     <!--================Main Header Area =================-->
@@ -120,65 +162,231 @@
 
     <!--================End Main Header Area =================-->
     <section>
-      <img src="img/banner/about-us.jpg" width="100%" />
+      <img src="img/banner/frienchiese.jpg" width="100%" />
     </section>
     <!--================End Main Header Area =================-->
 
 
-    <section
-      class="latest_news_area franchises"
-    >
+    <section class="latest_news_area franchises" style="background-color: #ecfffe;">
       <div class="container">
         <div class="row latest_news_inner">
-          <div class="col-lg-12">
-            <p class="text-justify">Greece is well known for its ancient ffood culture like india. The European and Indian Promotors joined hands together to bring the world class food products to the highly populated & dairy food product consuming market of india.</p>
-            <p class="text-justify">With European food standards, a venture was introduced by the name of GREECANIA to offer a perfect blend of Greek flavours to tickle te Indian taste buds.</p>
-            <p class="text-justify">The first franchise of Greecania was started in Kolhapur, after its success the culture of Greecania was brought in Kothrud, Pune. Now with the vision, we are ready to open business opportunities for you to grow together with European Partners in the wwell-established and fastest growing Franchisee business models.</p>
-            <p class="text-justify">Greecania welcomes you to become a part of European business culture and Greek in India wave!</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="l_news_image">
-              <div class="l_news_img">
-                <img class="img-fluid" src="img/franchises/1.png" alt="" />
+          
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="l_news_image">
+                  <div class="l_news_img">
+                    <img class="img-fluid" src="img/franchises/1.png" alt="" />
+                  </div>
+                  <div class="latest-news text-center">
+                    <h4 class="text-center pt-1">THE COUNTER</h4>
+                    <p class="text-dark text-center">Open The Counter Today In Your Own Setup<br> Just For <b>₹ 1.5 - 2 Lakhs</b> Investment And Earn Huge Profits.</p>
+                    <h4 class="text-center">Area - 50-80 Sq.Ft</h4>
+                    <p class="text-dark text-center">Offer Your Customers The Natural & Freshly Churned
+                      Ice-creams Made With European Standards</p>
+                      <!-- <a class="text-center"
+                      href="contact.html"
+                      style="
+                        background-color: rgb(15, 195, 226);
+                        color: #fff;
+                        font-weight: 800;
+                        padding: 5px 10px;
+                      "
+                      >Enquire Now</a
+                    > -->
+                    <button 
+                    type="button" 
+                    class="btn btn-primary"  
+                    data-toggle="modal" 
+                    data-target="#exampleModal"
+                    style="
+                        background-color: rgb(15, 195, 226);
+                        color: #fff;
+                        font-weight: 800;
+                        border:1px solid rgb(15, 195, 226);
+                        padding: 5px 10px;
+                      "
+                    >
+                    Enquire Now
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="latest-news">
-                <h4 class="text-center pt-2"><a style="font-size: 19px;" class="text-dark" href="franchise-one.html">COUNTER LOOK AND FEEL</a></h4><br>
+              <div class="col-lg-6 col-md-6">
+                <div class="l_news_image">
+                  <div class="l_news_img">
+                    <img class="img-fluid" src="img/franchises/2.png" alt="" />
+                  </div>
+                  <div class="latest-news text-center">
+                    <h4 class="text-center pt-1">THE PARLOUR</h4>
+                    <p class="text-dark text-center">Open The Parlour Today<br> Just For <b>₹ 5.5 Lakhs</b> Investment And Earn Huge Profits.</p>
+                    <h4 class="text-center">Area - 100-150 Sq.Ft</h4>
+                    <p class="text-dark text-center">Offer Your Customers The Natural & Freshly Churned
+                      Ice-creams & More Made With European Standards</p>
+                      <!-- <a class="text-center"
+                      href="contact.html"
+                      style="
+                        background-color: rgb(15, 195, 226);
+                        color: #fff;
+                        font-weight: 800;
+                        padding: 5px 10px;
+                      "
+                      >Enquire Now</a
+                    > -->
+                    <button 
+                    type="button" 
+                    class="btn btn-primary"  
+                    data-toggle="modal" 
+                    data-target="#exampleModal"
+                    style="
+                        background-color: rgb(15, 195, 226);
+                        color: #fff;
+                        font-weight: 800;
+                        border:1px solid rgb(15, 195, 226);
+                        padding: 5px 10px;
+                      "
+                    >
+                    Enquire Now
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="l_news_image">
-              <div class="l_news_img">
-                <img class="img-fluid" src="img/franchises/2.png" alt="" />
+          </div>          
+          <div class="col-lg-1"></div>
+
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="l_news_image">
+                  <div class="l_news_img">
+                    <img class="img-fluid" src="img/franchises/3.png" alt="" />
+                  </div>
+                  <div class="latest-news text-center">
+                    <h4 class="text-center pt-1">THE CAFE</h4>
+                    <p class="text-dark text-center">Open The Cafe Today<br> Just For <b>₹ 14 Lakhs</b> Investment And Earn Huge Profits.</p>
+                    <h4 class="text-center">Area - 500-700 Sq.Ft</h4>
+                    <p class="text-dark text-center">Offer Your Customers The Taste Of Greek Cuisines<br>
+                      With Natural & Freshly Churned Ice-creams Made<br>
+                      With European Standards</p>
+                      <!-- <a class="text-center"
+                      href="contact.html"
+                      style="
+                        background-color: rgb(15, 195, 226);
+                        color: #fff;
+                        font-weight: 800;
+                        padding: 5px 10px;
+                      "
+                      >Enquire Now</a
+                    > -->
+                    <button 
+                    type="button" 
+                    class="btn btn-primary"  
+                    data-toggle="modal" 
+                    data-target="#exampleModal"
+                    style="
+                        background-color: rgb(15, 195, 226);
+                        color: #fff;
+                        font-weight: 800;
+                        border:1px solid rgb(15, 195, 226);
+                        padding: 5px 10px;
+                      "
+                    >
+                    Enquire Now
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="latest-news">
-                <h4 class="text-center pt-2"><a style="font-size: 19px;" class="text-dark" href="franchise-two.html">PARLOUR LOOK AND FEEL</a></h4><br>
+              <div class="col-lg-6 col-md-6">
+                <div class="l_news_image">
+                  <div class="l_news_img">
+                    <img class="img-fluid" src="img/franchises/4.png" alt="" />
+                  </div>
+                  <div class="latest-news text-center">
+                    <h4 class="text-center pt-1">MICRO ICE-CREAM FACTORY</h4>
+                    <p class="text-dark text-center">Open The Micro Ice-cream Factory Today<br> Just For <b>₹ 22 Lakhs</b> Investment And Earn Huge Profits.</p>
+                    <h4 class="text-center">Area - 800-1000 Sq.Ft</h4>
+                    <p class="text-dark text-center">Offer Your Customers The Taste Of Greek Cuisines &<br>
+                      The Experience Of Churning Fresh<br>
+                      Ice-creams At Your Outlet.</p>
+                      <!-- <a class="text-center"
+                      href="contact.html"
+                      style="
+                        background-color: rgb(15, 195, 226);
+                        color: #fff;
+                        font-weight: 800;
+                        padding: 5px 10px;
+                      "
+                      >Enquire Now</a
+                    > -->
+                    <button 
+                    type="button" 
+                    class="btn btn-primary"  
+                    data-toggle="modal" 
+                    data-target="#exampleModal"
+                    style="
+                        background-color: rgb(15, 195, 226);
+                        color: #fff;
+                        font-weight: 800;
+                        border:1px solid rgb(15, 195, 226);
+                        padding: 5px 10px;
+                      "
+                    >
+                    Enquire Now
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="l_news_image">
-              <div class="l_news_img">
-                <img class="img-fluid" src="img/franchises/3.png" alt="" />
-              </div>
-              <div class="latest-news">
-                <h4 class="text-center pt-2"><a style="font-size: 19px;" class="text-dark" href="franchise-three.html">CAFE LOOK AND FEEL</a></h4><br>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="l_news_image">
-              <div class="l_news_img">
-                <img class="img-fluid" src="img/franchises/4.png" alt="" />
-              </div>
-              <div class="latest-news">
-                <h4 class="text-center pt-2"><a style="font-size: 19px;" class="text-dark" href="franchise-four.html">MICRO ICE-CREAM FACTORY CAFE LOOK AND FEEL</a></h4>
-              </div>
-            </div>
-          </div>
+          </div>          
+          <div class="col-lg-1"></div>
+          
         </div>
       </div>
     </section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title text-white" id="exampleModalLabel">Enquire Now</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="modal.php">
+          <input type="text" required name="name" placeholder="Name">
+      
+          <input type="text" required name="number" placeholder="Contact Number">
+
+          <input type="text" required name="email" placeholder="Email Id">
+      
+          <select id="country" required name="country">
+            <option value="models">Franchise Models</option>
+            <option value="counter">The Counter</option>
+            <option value="parlour">The Parlour</option>
+            <option value="cafe">The Cafe</option>
+            <option value="icecream">Micro Ice-Cream Factory</option>
+          </select>
+      
+          <input type="text" required name="city" placeholder="City Located">
+      
+          <button
+            class="btn-submit"
+            type="submit"
+            value="submit"
+          >
+          Send Enquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <!--================Footer Area =================-->
