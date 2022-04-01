@@ -109,6 +109,18 @@ body {
   padding: 100px 0px;
 }
 
+.p_80{
+  padding: 80px 0;
+}
+
+.p_60{
+  padding: 60px 0;
+}
+
+.p_40{
+  padding: 40px 0;
+}
+
 iframe {
   border: none;
 }
@@ -3122,7 +3134,7 @@ i:before {
   font-size: 16px;
   line-height: 26px;
   color: #797979;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 /* End Service Area css
